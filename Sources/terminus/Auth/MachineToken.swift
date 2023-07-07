@@ -14,4 +14,5 @@ struct MachineToken: ParsableCommand {
         abstract: "Set the machine token",
         shouldDisplay: true
     )
+    
 }
