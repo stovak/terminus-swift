@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D62D9DCF2A5E1E37001A9D37 /* HTTPTypes in Frameworks */ = {isa = PBXBuildFile; productRef = D62D9DCE2A5E1E37001A9D37 /* HTTPTypes */; };
+		D62D9DD12A5E1E37001A9D37 /* HTTPTypesFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = D62D9DD02A5E1E37001A9D37 /* HTTPTypesFoundation */; };
 		D64C01082A5DDB1900EAB606 /* Terminus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C00FA2A5DDB1900EAB606 /* Terminus.swift */; };
 		D64C01132A5DDBBD00EAB606 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C010E2A5DDBBD00EAB606 /* Version.swift */; };
 		D64C01142A5DDBBD00EAB606 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C010D2A5DDBBD00EAB606 /* Login.swift */; };
@@ -41,10 +43,9 @@
 		D64C01102A5DDBBD00EAB606 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		D64C01112A5DDBBD00EAB606 /* TerminusConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminusConfig.swift; sourceTree = "<group>"; };
 		D64C01122A5DDBBD00EAB606 /* WhoAmI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoAmI.swift; sourceTree = "<group>"; };
-		D6F84CEC2A5DBC860032AED1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
-		D6F84CED2A5DBC860032AED1 /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; name = Package.resolved; path = ../Package.resolved; sourceTree = "<group>"; };
+		D6F84CEC2A5DBC860032AED1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		D6F84CED2A5DBC860032AED1 /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Package.resolved; sourceTree = "<group>"; };
 		D6F84CF42A5DBD0F0032AED1 /* terminus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = terminus; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6F84CFF2A5DD5190032AED1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D62D9DCF2A5E1E37001A9D37 /* HTTPTypes in Frameworks */,
+				D62D9DD12A5E1E37001A9D37 /* HTTPTypesFoundation in Frameworks */,
 				D6F84D022A5DD67D0032AED1 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,21 +65,13 @@
 		D64742BB2A5DDFEF00987566 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D64742BC2A5DE0D500987566 /* Terminus */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		D64742BC2A5DE0D500987566 /* Terminus */ = {
-			isa = PBXGroup;
-			children = (
 				D64C00FA2A5DDB1900EAB606 /* Terminus.swift */,
 				D64C011F2A5DDD1F00EAB606 /* Extensions */,
 				D64C011E2A5DDD0C00EAB606 /* Config */,
 				D64C011C2A5DDCA000EAB606 /* Models */,
 				D64C011B2A5DDC8A00EAB606 /* Commands */,
 			);
-			path = Terminus;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		D64C011B2A5DDC8A00EAB606 /* Commands */ = {
@@ -127,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				D64742BB2A5DDFEF00987566 /* Sources */,
-				D6F84CFF2A5DD5190032AED1 /* .swiftlint.yml */,
 				D6F84CED2A5DBC860032AED1 /* Package.resolved */,
 				D6F84CEC2A5DBC860032AED1 /* Package.swift */,
 				D6F84CF52A5DBD0F0032AED1 /* Products */,
@@ -160,6 +154,8 @@
 			name = terminus;
 			packageProductDependencies = (
 				D6F84D012A5DD67D0032AED1 /* ArgumentParser */,
+				D62D9DCE2A5E1E37001A9D37 /* HTTPTypes */,
+				D62D9DD02A5E1E37001A9D37 /* HTTPTypesFoundation */,
 			);
 			productName = terminus;
 			productReference = D6F84CF42A5DBD0F0032AED1 /* terminus */;
@@ -191,6 +187,7 @@
 			mainGroup = D6F84CE42A5DBC4A0032AED1;
 			packageReferences = (
 				D6F84D002A5DD67C0032AED1 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				D62D9DCD2A5E1E37001A9D37 /* XCLocalSwiftPackageReference "../swift-http-types" */,
 			);
 			productRefGroup = D6F84CF52A5DBD0F0032AED1 /* Products */;
 			projectDirPath = "";
@@ -226,6 +223,7 @@
 			buildSettings = {
 				"INSTALL_PATH[sdk=*]" = bin;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -234,6 +232,7 @@
 			buildSettings = {
 				"INSTALL_PATH[sdk=*]" = bin;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -390,6 +389,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		D62D9DCD2A5E1E37001A9D37 /* XCLocalSwiftPackageReference "../swift-http-types" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../swift-http-types";
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		D6F84D002A5DD67C0032AED1 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -402,6 +408,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D62D9DCE2A5E1E37001A9D37 /* HTTPTypes */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HTTPTypes;
+		};
+		D62D9DD02A5E1E37001A9D37 /* HTTPTypesFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HTTPTypesFoundation;
+		};
 		D6F84D012A5DD67D0032AED1 /* ArgumentParser */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D6F84D002A5DD67C0032AED1 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
