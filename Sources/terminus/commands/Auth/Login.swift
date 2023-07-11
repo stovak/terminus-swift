@@ -7,10 +7,16 @@
 import ArgumentParser
 import Foundation
 
+
 struct Login: ParsableCommand {
     static var configuration = CommandConfiguration(
         commandName: "login",
         abstract: "Use stored token to login",
         shouldDisplay: true
     )
+    
+    func run() throws {
+        let sess = self.getTerminusConfig().getSession()
+        print("Session: \(sess)")
+    }
 }

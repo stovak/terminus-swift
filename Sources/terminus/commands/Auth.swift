@@ -19,4 +19,8 @@ struct Auth: ParsableCommand {
             MachineToken.self, WhoAmI.self, Login.self
         ]
     )
+    
+    func run() throws {
+        
+    }
 }
