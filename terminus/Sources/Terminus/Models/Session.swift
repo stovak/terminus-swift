@@ -33,4 +33,9 @@ struct Session: Decodable {
         // TODO: add other validations
         return true
     }
+    
+    public func getUsername() -> String {
+        return self.user_id
+    }
+    
 }

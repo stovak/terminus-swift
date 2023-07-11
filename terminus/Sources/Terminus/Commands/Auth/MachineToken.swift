@@ -15,4 +15,9 @@ struct MachineToken: ParsableCommand {
         shouldDisplay: true
     )
     
+    func run() throws {
+        print("Machine Token")
+    }
+
+    
 }

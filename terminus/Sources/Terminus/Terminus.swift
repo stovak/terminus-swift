@@ -19,5 +19,11 @@ struct Terminus: ParsableCommand {
         ],
         defaultSubcommand: Terminus.self
     )
+
+    func run() throws {
+        print("Terminus")
+    }
+    
+
     
 }

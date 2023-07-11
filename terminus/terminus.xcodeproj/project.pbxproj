@@ -43,8 +43,6 @@
 		D64C01122A5DDBBD00EAB606 /* WhoAmI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoAmI.swift; sourceTree = "<group>"; };
 		D6F84CEC2A5DBC860032AED1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		D6F84CED2A5DBC860032AED1 /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; name = Package.resolved; path = ../Package.resolved; sourceTree = "<group>"; };
-		D6F84CEE2A5DBC860032AED1 /* Taskfile.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = Taskfile.yml; path = ../Taskfile.yml; sourceTree = "<group>"; };
-		D6F84CEF2A5DBC860032AED1 /* terminus */ = {isa = PBXFileReference; lastKnownFileType = folder; path = terminus; sourceTree = "<group>"; };
 		D6F84CF42A5DBD0F0032AED1 /* terminus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = terminus; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6F84CFF2A5DD5190032AED1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +59,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D64742BB2A5DDFEF00987566 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D64742BC2A5DE0D500987566 /* Terminus */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D64742BC2A5DE0D500987566 /* Terminus */ = {
+			isa = PBXGroup;
+			children = (
+				D64C00FA2A5DDB1900EAB606 /* Terminus.swift */,
+				D64C011F2A5DDD1F00EAB606 /* Extensions */,
+				D64C011E2A5DDD0C00EAB606 /* Config */,
+				D64C011C2A5DDCA000EAB606 /* Models */,
+				D64C011B2A5DDC8A00EAB606 /* Commands */,
+			);
+			path = Terminus;
+			sourceTree = "<group>";
+		};
 		D64C011B2A5DDC8A00EAB606 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,16 +126,10 @@
 		D6F84CE42A5DBC4A0032AED1 = {
 			isa = PBXGroup;
 			children = (
-				D64C011F2A5DDD1F00EAB606 /* Extensions */,
-				D64C011E2A5DDD0C00EAB606 /* Config */,
-				D64C011C2A5DDCA000EAB606 /* Models */,
-				D64C011B2A5DDC8A00EAB606 /* Commands */,
-				D64C00FA2A5DDB1900EAB606 /* Terminus.swift */,
+				D64742BB2A5DDFEF00987566 /* Sources */,
 				D6F84CFF2A5DD5190032AED1 /* .swiftlint.yml */,
 				D6F84CED2A5DBC860032AED1 /* Package.resolved */,
 				D6F84CEC2A5DBC860032AED1 /* Package.swift */,
-				D6F84CEE2A5DBC860032AED1 /* Taskfile.yml */,
-				D6F84CEF2A5DBC860032AED1 /* terminus */,
 				D6F84CF52A5DBD0F0032AED1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -140,7 +152,6 @@
 				D6F84CF02A5DBD0F0032AED1 /* Sources */,
 				D6F84CF12A5DBD0F0032AED1 /* Frameworks */,
 				D6F84CF22A5DBD0F0032AED1 /* CopyFiles */,
-				D6F84CFC2A5DBD200032AED1 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -190,27 +201,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		D6F84CFC2A5DBD200032AED1 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		D6F84CF02A5DBD0F0032AED1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -234,6 +224,7 @@
 		D6F84CE92A5DBC4A0032AED1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"INSTALL_PATH[sdk=*]" = bin;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Debug;
@@ -241,6 +232,7 @@
 		D6F84CEA2A5DBC4A0032AED1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"INSTALL_PATH[sdk=*]" = bin;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Release;
@@ -281,7 +273,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_ASSET_PATHS = "ParsableCommand.swift Auth.swift Login.swift MachineToken.swift Terminus.swift ../Package.swift Version.swift Session.swift TerminusConfig.swift WhoAmI.swift";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = H3EJ6Y8VJ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -350,7 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_ASSET_PATHS = "ParsableCommand.swift Auth.swift Login.swift MachineToken.swift Terminus.swift ../Package.swift Version.swift Session.swift TerminusConfig.swift WhoAmI.swift";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = H3EJ6Y8VJ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;

@@ -21,6 +21,11 @@ struct Auth: ParsableCommand {
     )
     
     func run() throws {
-        
+        let s = self.getTerminusConfig().getSession()
+        if s.valid() {
+            print("You are logged in as \(s.getUsername())")
+        } else {
+            print("You are not logged in")
+        }
     }
 }

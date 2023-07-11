@@ -8,10 +8,13 @@
 import ArgumentParser
 import Foundation
 
+var tc = TerminusConfig.init()
+
+
 extension ParsableCommand {
     
     func getTerminusConfig() -> TerminusConfig {
-        return TerminusConfig.init()
+        return tc
     }
     
 }
