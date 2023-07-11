@@ -7,7 +7,7 @@
 
 import Foundation
 
-let version = "5.0"
+let version = "5.0.0-alpha1"
 
 struct TerminusConfig {
 

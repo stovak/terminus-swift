@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D6F84CFE2A5DBDDD0032AED1 /* Terminus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F84CFD2A5DBDDD0032AED1 /* Terminus.swift */; };
+		D64C01082A5DDB1900EAB606 /* Terminus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C00FA2A5DDB1900EAB606 /* Terminus.swift */; };
+		D64C01132A5DDBBD00EAB606 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C010E2A5DDBBD00EAB606 /* Version.swift */; };
+		D64C01142A5DDBBD00EAB606 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C010D2A5DDBBD00EAB606 /* Login.swift */; };
+		D64C01152A5DDBBD00EAB606 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C01102A5DDBBD00EAB606 /* Session.swift */; };
+		D64C01162A5DDBBD00EAB606 /* TerminusConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C01112A5DDBBD00EAB606 /* TerminusConfig.swift */; };
+		D64C01172A5DDBBD00EAB606 /* ParsableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C010B2A5DDBBD00EAB606 /* ParsableCommand.swift */; };
+		D64C01182A5DDBBD00EAB606 /* MachineToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C010C2A5DDBBD00EAB606 /* MachineToken.swift */; };
+		D64C01192A5DDBBD00EAB606 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C010F2A5DDBBD00EAB606 /* Auth.swift */; };
+		D64C011A2A5DDBBD00EAB606 /* WhoAmI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C01122A5DDBBD00EAB606 /* WhoAmI.swift */; };
+		D6F84D022A5DD67D0032AED1 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = D6F84D012A5DD67D0032AED1 /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,14 +32,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D6F84CEB2A5DBC860032AED1 /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sources; path = ../Sources; sourceTree = "<group>"; };
+		D64C00FA2A5DDB1900EAB606 /* Terminus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminus.swift; sourceTree = "<group>"; };
+		D64C010B2A5DDBBD00EAB606 /* ParsableCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableCommand.swift; sourceTree = "<group>"; };
+		D64C010C2A5DDBBD00EAB606 /* MachineToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineToken.swift; sourceTree = "<group>"; };
+		D64C010D2A5DDBBD00EAB606 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		D64C010E2A5DDBBD00EAB606 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		D64C010F2A5DDBBD00EAB606 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		D64C01102A5DDBBD00EAB606 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		D64C01112A5DDBBD00EAB606 /* TerminusConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminusConfig.swift; sourceTree = "<group>"; };
+		D64C01122A5DDBBD00EAB606 /* WhoAmI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoAmI.swift; sourceTree = "<group>"; };
 		D6F84CEC2A5DBC860032AED1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		D6F84CED2A5DBC860032AED1 /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; name = Package.resolved; path = ../Package.resolved; sourceTree = "<group>"; };
 		D6F84CEE2A5DBC860032AED1 /* Taskfile.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = Taskfile.yml; path = ../Taskfile.yml; sourceTree = "<group>"; };
-		D6F84CEF2A5DBC860032AED1 /* terminus */ = {isa = PBXFileReference; lastKnownFileType = folder; name = terminus; sourceTree = "<group>"; };
+		D6F84CEF2A5DBC860032AED1 /* terminus */ = {isa = PBXFileReference; lastKnownFileType = folder; path = terminus; sourceTree = "<group>"; };
 		D6F84CF42A5DBD0F0032AED1 /* terminus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = terminus; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6F84CF72A5DBD0F0032AED1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		D6F84CFD2A5DBDDD0032AED1 /* Terminus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Terminus.swift; path = ../Sources/terminus/Terminus.swift; sourceTree = "<group>"; };
 		D6F84CFF2A5DD5190032AED1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,23 +54,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F84D022A5DD67D0032AED1 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D64C011B2A5DDC8A00EAB606 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				D64C010E2A5DDBBD00EAB606 /* Version.swift */,
+				D64C011D2A5DDCE100EAB606 /* Auth */,
+				D64C010F2A5DDBBD00EAB606 /* Auth.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		D64C011C2A5DDCA000EAB606 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D64C01102A5DDBBD00EAB606 /* Session.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D64C011D2A5DDCE100EAB606 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D64C010D2A5DDBBD00EAB606 /* Login.swift */,
+				D64C010C2A5DDBBD00EAB606 /* MachineToken.swift */,
+				D64C01122A5DDBBD00EAB606 /* WhoAmI.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D64C011E2A5DDD0C00EAB606 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D64C01112A5DDBBD00EAB606 /* TerminusConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D64C011F2A5DDD1F00EAB606 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D64C010B2A5DDBBD00EAB606 /* ParsableCommand.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D6F84CE42A5DBC4A0032AED1 = {
 			isa = PBXGroup;
 			children = (
+				D64C011F2A5DDD1F00EAB606 /* Extensions */,
+				D64C011E2A5DDD0C00EAB606 /* Config */,
+				D64C011C2A5DDCA000EAB606 /* Models */,
+				D64C011B2A5DDC8A00EAB606 /* Commands */,
+				D64C00FA2A5DDB1900EAB606 /* Terminus.swift */,
 				D6F84CFF2A5DD5190032AED1 /* .swiftlint.yml */,
-				D6F84CFD2A5DBDDD0032AED1 /* Terminus.swift */,
 				D6F84CED2A5DBC860032AED1 /* Package.resolved */,
 				D6F84CEC2A5DBC860032AED1 /* Package.swift */,
-				D6F84CEB2A5DBC860032AED1 /* Sources */,
 				D6F84CEE2A5DBC860032AED1 /* Taskfile.yml */,
 				D6F84CEF2A5DBC860032AED1 /* terminus */,
-				D6F84CF62A5DBD0F0032AED1 /* terminus */,
 				D6F84CF52A5DBD0F0032AED1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,14 +128,6 @@
 				D6F84CF42A5DBD0F0032AED1 /* terminus */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D6F84CF62A5DBD0F0032AED1 /* terminus */ = {
-			isa = PBXGroup;
-			children = (
-				D6F84CF72A5DBD0F0032AED1 /* main.swift */,
-			);
-			path = terminus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +147,9 @@
 			dependencies = (
 			);
 			name = terminus;
+			packageProductDependencies = (
+				D6F84D012A5DD67D0032AED1 /* ArgumentParser */,
+			);
 			productName = terminus;
 			productReference = D6F84CF42A5DBD0F0032AED1 /* terminus */;
 			productType = "com.apple.product-type.tool";
@@ -121,6 +178,9 @@
 				Base,
 			);
 			mainGroup = D6F84CE42A5DBC4A0032AED1;
+			packageReferences = (
+				D6F84D002A5DD67C0032AED1 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = D6F84CF52A5DBD0F0032AED1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,7 +216,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6F84CFE2A5DBDDD0032AED1 /* Terminus.swift in Sources */,
+				D64C01152A5DDBBD00EAB606 /* Session.swift in Sources */,
+				D64C01142A5DDBBD00EAB606 /* Login.swift in Sources */,
+				D64C01132A5DDBBD00EAB606 /* Version.swift in Sources */,
+				D64C01162A5DDBBD00EAB606 /* TerminusConfig.swift in Sources */,
+				D64C01082A5DDB1900EAB606 /* Terminus.swift in Sources */,
+				D64C01172A5DDBBD00EAB606 /* ParsableCommand.swift in Sources */,
+				D64C01182A5DDBBD00EAB606 /* MachineToken.swift in Sources */,
+				D64C011A2A5DDBBD00EAB606 /* WhoAmI.swift in Sources */,
+				D64C01192A5DDBBD00EAB606 /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,12 +234,14 @@
 		D6F84CE92A5DBC4A0032AED1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Debug;
 		};
 		D6F84CEA2A5DBC4A0032AED1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Release;
 		};
@@ -211,6 +281,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "ParsableCommand.swift Auth.swift Login.swift MachineToken.swift Terminus.swift ../Package.swift Version.swift Session.swift TerminusConfig.swift WhoAmI.swift";
 				DEVELOPMENT_TEAM = H3EJ6Y8VJ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -279,6 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "ParsableCommand.swift Auth.swift Login.swift MachineToken.swift Terminus.swift ../Package.swift Version.swift Session.swift TerminusConfig.swift WhoAmI.swift";
 				DEVELOPMENT_TEAM = H3EJ6Y8VJ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -325,6 +397,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D6F84D002A5DD67C0032AED1 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6F84D012A5DD67D0032AED1 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6F84D002A5DD67C0032AED1 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D6F84CE52A5DBC4A0032AED1 /* Project object */;
 }

@@ -16,7 +16,7 @@ struct Session: Decodable {
     // Get the session from $HOME/.terminus/cache/session.json
     public static func fromFile(f: FileManager) -> Session {
         let decoder = JSONDecoder()
-        let sessionFile = f.homeDirectoryForCurrentUser.appendingPathComponent(path(withComponents: [".terminus", "cache", "session"]));
+        let sessionFile = f.homeDirectoryForCurrentUser.appendingPathComponent(NSString.path(withComponents: [".terminus", "cache", "session"]));
         let data = try! Data(contentsOf: sessionFile)
         let session = try! decoder.decode(Session.self, from: data)
         return session

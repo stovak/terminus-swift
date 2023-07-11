@@ -15,7 +15,7 @@ struct Version: ParsableCommand {
     )
     
     func run() throws {
-        let ver = self.getTerminusConfig().getSession()
+        let ver = self.getTerminusConfig().getVersion()
         print("\(ver)")
     }
     
